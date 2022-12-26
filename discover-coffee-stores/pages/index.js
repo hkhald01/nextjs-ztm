@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Banner from './components/banner';
 import styles from '../styles/Home.module.css';
 
-export default function Home() {
+const Home = () => {
  const handleBannerButtonOnClick = () => {
   console.log('hi banner button');
  };
@@ -16,7 +16,6 @@ export default function Home() {
    </Head>
 
    <main className={styles.main}>
-    <h1 className={styles.title}>Coffee Connoisseur</h1>
     <Banner
      buttonText='View stores nearby!'
      onClick={handleBannerButtonOnClick}
@@ -24,4 +23,6 @@ export default function Home() {
    </main>
   </div>
  );
-}
+};
+
+export default Home;
